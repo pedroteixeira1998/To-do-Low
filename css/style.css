@@ -1,15 +1,29 @@
 /* Geral */
+@font-face {
+    font-family: minhafonte;
+    src: url(cubic.ttf);
+  }
+  @font-face {
+    font-family: restante;
+    src: url(Astronomus.ttf);
+  }
+
+  h1 {
+    font-family: minhafonte;
+  }
+
+
 * {
     padding: 0%;
     margin: 0%;
-    font-family: Helvetica;
-    color: #333;
+    font-family: restante;
+    color: #39b74b;
     box-sizing: border-box;
-    border-radius: 20px;
+    border-radius: 20px ;
 }
 
 body{
-    background-image: url("../img/bg.jpeg");
+    background-image: url("../img/Design\ sem\ nome\ \(1\).png");
     background-position: center;
     background-size: cover;
     
@@ -17,8 +31,8 @@ body{
 
 button{
     background-color: #fdfdfd;
-    color: #102f5e;    
-    border: 2px solid #102f5e;
+    color: #39b74b;    
+    border: 2px solid #39b74b;
     padding: .3rem .6rem;
     font-size: 1rem;
     cursor: pointer;
@@ -26,11 +40,12 @@ button{
     justify-content: center;
     align-items: center;
     transition: 0.4s;
+
     
 }
 
 button:hover{
-    background-color: #102f5e;
+    background-color: #39b74b;
 }
 
 button:hover > i {
@@ -38,7 +53,7 @@ button:hover > i {
 }
 
 button i {
-    color: #102f5e;
+    color: #39b74b;
     font-weight: bold;
     pointer-events: none;
 }
@@ -58,6 +73,7 @@ input, select {
     background-color: #fdfdfd;
     padding: 1.5rem;
     border-radius: 15px;
+    
 
 }
 
@@ -65,7 +81,8 @@ input, select {
     text-align: center;
     padding: 0 1rem 1rem;
     border-bottom: 1px solid #ccc;
-}
+}    
+
 
 /* Todo form */
 #todo-form, #edit-form{
@@ -91,7 +108,7 @@ input, select {
     margin-top: 1rem;
 }
 
-/* Todo toolbar*/
+/* Todo toolbar
 
 #toolbar{
     padding: 1rem;
@@ -126,7 +143,7 @@ input, select {
     display: flex;
     flex-direction: column;
     flex: 1;
-}
+}*/
 
 /*Todo list */
 .todo{
@@ -148,7 +165,7 @@ input, select {
 }
 
 .done {
-    background-color: #395169;
+    background-color: #39b74b;
 }
 
 .done h3{
